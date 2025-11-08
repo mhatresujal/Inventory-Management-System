@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome | ERP Inventory</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    html, body { height: 100%; }
+    body {
+      min-height: 100vh;
+      background: #555; /* replace with your image if you want */
+      display: flex; align-items: center; justify-content: center;
+      margin: 0;
+    }
+    .hero {
+      background: rgba(0,0,0,0.55);
+      color: #fff;
+      padding: 48px 42px;
+      border-radius: 18px;
+      text-align: center;
+      max-width: 760px;
+      width: 92%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .hero h1 { font-weight: 700; letter-spacing: .3px; }
+    .btn-enter {
+      font-size: 1.15rem; padding: 12px 28px; border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <h1 class="mb-3">📦 ERP Inventory Management System</h1>
+    <p class="lead mb-4">Simple • Fast • Efficient</p>
+    <!-- Single call-to-action -->
+    <a href="{{ url_for('index') }}" class="btn btn-success btn-enter">Enter Dashboard</a>
+  </main>
+</body>
+</html>
